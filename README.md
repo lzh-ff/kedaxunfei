@@ -54,3 +54,5 @@ python -m uvicorn server.app:app --host 127.0.0.1 --port 8000
 [技术说明](docs/technical.md) · [测试记录](docs/test-report.md) · [部署记录](docs/deployment.md) · [知识来源](docs/sources.md)
 
 程序测试不代替 2—3 名真实师生反馈；视频、PPT、签章材料仍须另行整理。本仓库不声明已经正式提交比赛。
+
+历史兼容：根目录index.html、styles.css、src/app.mjs及tests/e2e.mjs保留原经世智学v1代码，可用legacy:preview查看；它们不是当前Pages入口。新版源入口是web/app/page.tsx，新测试为tests/adaptive-e2e.mjs。
