@@ -1,0 +1,12 @@
+{
+  "name": "jingshi-econ-practicum",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "devDependencies": { "playwright": "1.58.2" }
+}
