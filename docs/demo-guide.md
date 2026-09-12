@@ -2,7 +2,7 @@
 
 作品：经世智学 · 电子商务运营岗位实训。
 
-目标链接：https://lzh-ff.github.io/kedaxunfei/ 。上线状态见同目录 `deployment.md`。
+体验链接：https://lzh-ff.github.io/kedaxunfei/ 。2026-09-12已发布并在线验证，证据见同目录 `deployment.md`。
 
 无需账号、API密钥、附件上传或软件安装。用支持JavaScript的现代浏览器打开链接即可体验。知识与计算在浏览器运行，首次需加载页面文件。
 

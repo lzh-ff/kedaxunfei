@@ -14,15 +14,19 @@
 
 ## 执行步骤与验证
 
-- [ ] 建立 `tests/core.test.mjs`：先验证缺失功能失败，覆盖利润、需求、边界输入、偏好效用、问答追问、测评与知识来源。
-- [ ] 建立 `data/knowledge.mjs`、`data/curriculum.mjs`：60条以上有明确章节来源的知识和6个能力维度；内容为中文教学改写与原创案例。
-- [ ] 实现 `src/engine.mjs`：`simulatePricing(input)`、`evaluateGame(input)`、`reply(question,context)`、`diagnose(answers)`；返回结构化结果和来源ID。
-- [ ] 实现 `index.html`、`src/app.mjs`、`src/views.mjs`、`styles.css`：实训工作台、能力图谱、学习诊断、知识库、偏好实验、体验说明、反馈与报告导出。
-- [ ] 使用 Node 内置测试验证数值和流程；使用 Playwright 在桌面及手机视口验证完整用户路径、可用性、无水平溢出和无浏览器错误。
-- [ ] 编写可复现说明、Demo使用说明、数据来源与许可、实现边界及测试记录。
-- [ ] 将已验证的公开网页文件发布到指定仓库，开启 Pages；独立请求线上页面、脚本和数据并验证交互，记录实际链接及部署结果。
-- [ ] 重新读取并局部更新项目共享记忆，区分程序自测与尚未获得的真实用户反馈。
+- [x] 建立 `tests/core.test.mjs`：先验证缺失功能失败，覆盖利润、需求、边界输入、偏好效用、问答追问、测评与知识来源。
+- [x] 建立 `data/knowledge.mjs`、`data/curriculum.mjs`：60条以上有明确章节来源的知识和6个能力维度；内容为中文教学改写与原创案例。
+- [x] 实现 `src/engine.mjs`：`simulatePricing(input)`、`evaluateGame(input)`、`reply(question,context)`、`diagnose(answers)`；返回结构化结果和来源ID。
+- [x] 实现 `index.html`、`src/app.mjs`、`src/views.mjs`、`styles.css`：实训工作台、能力图谱、学习诊断、知识库、偏好实验、体验说明、反馈与报告导出。
+- [x] 使用 Node 内置测试验证数值和流程；使用 Playwright 在桌面及手机视口验证完整用户路径、可用性、无水平溢出和无浏览器错误。
+- [x] 编写可复现说明、Demo使用说明、数据来源与许可、实现边界及测试记录。
+- [x] 将已验证的公开网页文件发布到指定仓库，开启 Pages；独立请求线上页面、脚本和数据并验证交互，记录实际链接及部署结果。
+- [x] 重新读取并局部更新项目共享记忆，区分程序自测与尚未获得的真实用户反馈。
 
 ## 验收边界
 
 Demo实现与公开链接是本次目标。报名表、签章声明、PPT、真实2—3名师生反馈和正式提交邮件属于完整参赛材料，不能用程序自测替代。Demo提供反馈导出入口，待真实试用后归档。
+
+## 完成记录
+
+2026-09-12：上述实施步骤已完成。知识库65条、20个出处；17项核心测试通过，桌面与手机完整流程通过；Pages构建成功，公开URL上的同一浏览器流程通过。实际实现与范围见technical.md、test-report.md和deployment.md。真实师生反馈尚未取得，完整参赛材料未声称齐备。

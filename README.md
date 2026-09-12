@@ -2,7 +2,7 @@
 
 面向财经商贸专业群中电子商务专业（530701）的交互式教学 MVP。围绕电子商务运营专员的促销分析微任务，连接岗位能力、知识来源、参数实验、任务反馈和学习建议。
 
-目标发布地址：https://lzh-ff.github.io/kedaxunfei/ 。具体上线验证见 [部署记录](docs/deployment.md)。
+已发布体验地址：https://lzh-ff.github.io/kedaxunfei/ 。2026-09-12已在线验证，详见 [部署记录](docs/deployment.md)。
 
 ## 已实现的交互
 
