@@ -1,52 +1,56 @@
-# 经世智学 · 电子商务运营岗位实训
+# 职教自适应学习助手
 
-面向财经商贸专业群中电子商务专业（530701）的交互式教学 MVP。围绕电子商务运营专员的促销分析微任务，连接岗位能力、知识来源、参数实验、任务反馈和学习建议。
+面向财经商贸专业群、电子商务专业（530701）、电子商务运营专员的自适应学习 Demo。沿用原“经世智学”的岗位内容，参考 DeepTutor 1.6.7 的界面与分层架构。
 
-已发布体验地址：https://lzh-ff.github.io/kedaxunfei/ 。2026-09-12已在线验证，详见 [部署记录](docs/deployment.md)。
+公开入口：[立即体验](https://lzh-ff.github.io/kedaxunfei/) · [使用说明](docs/demo-guide.md) · [改造方案](docs/deeptutor-redesign.md)
 
-## 已实现的交互
+## 已实现
 
-- 3种业务情境、2个学习层级，生成步骤、评价标准和资源。
-- 调整售价、弹性、单位成本、固定成本和库存，即时重算销量、收入、利润、保本量与图表。
-- 65条可检索的经济学及岗位知识，20个章节或标准来源入口。
-- 规则与检索导师：澄清模糊问题、保留话题、回答例子与出处；定价提问读取当前实验参数。
-- 6个岗位能力维度与6题诊断，依据实际答题给出复习路径。
-- 经济人/普遍化偏好教学实验，直接计算策略效用。
-- 本地学习记录、Markdown实训报告、由真实使用者主动填写并导出的反馈记录。
-- 手机与桌面布局，键盘交互和知识详情弹窗。
+- 6 题诊断 → 学习安排 → 6 个阅读单元 → 基础题复核与 12 道迁移题 → 更新掌握度。
+- 复用 DeepTutor 1.6.7 近期加权算法；重复同题不增加不同题目证据数，阅读不会直接加分。
+- 65 条有来源的专业知识；导师支持模糊问题澄清、连续追问、案例与出处。
+- 3 种运营任务、2 个层级，定价/弹性/成本/库存实验、偏好博弈、笔记及报告导出。
+- 本机阅读、答题及对话记录；浅色/深色、手机导航、真实使用者主动填写并导出的反馈。
 
 ## 实现边界
 
-这是浏览器中的知识与规则 MVP，不包含外部大模型调用、训练后的MetaGPT教学代理或人岗匹配模型推理。所有经营数据均为合成教学案例。原代码包的设计思路与复用边界见[技术说明](docs/technical.md)。
+公开版是 Next.js 16 + React 19 静态导出。用户确认暂无服务器和模型接口，所以问答、学习状态和公式在浏览器运行，没有在线大模型、任意文件 RAG、多用户后台或完整 DeepTutor 代理运行时。经营数字均为教学模拟。
 
-没有后台反馈收集、账户或共享学习数据库；反馈文件必须由试用者自行交给团队。程序自测不是2—3名真实师生试用。
+Python 学习服务随代码交付并经本地验证，提供原版掌握度算法接口；公开版不依赖它。部分源码复用与修改见[开源说明](licenses/DeepTutor-NOTICE.md)。
 
-## 本地运行
+## 本地复现
 
-Node.js 24 或兼容的较新 Node 环境：
+环境：Node.js 22 以上；Python 3.11 以上用于算法对照测试。
 
 ```sh
 npm ci
+npm --prefix web ci
 npm test
+npm run build
 npm start
 ```
 
-访问 http://127.0.0.1:4173/ 。部署无需构建，GitHub Pages 直接发布仓库根目录。
+访问 http://127.0.0.1:4173/kedaxunfei/ 。`npm run test:e2e` 使用 Playwright 与已安装的 Microsoft Edge，默认验证本地导出。其他系统可将测试的 `channel:'msedge'` 改为已安装的浏览器。
 
-浏览器测试使用 Playwright 与已安装的 Microsoft Edge：
+可选学习服务：
 
 ```sh
-npm run test:e2e
+python -m pip install -r server/requirements.txt
+python -m uvicorn server.app:app --host 127.0.0.1 --port 8000
 ```
 
-其他操作系统可把 `tests/e2e.mjs` 中的 `channel:'msedge'` 改为本机已安装的浏览器配置，并按Playwright官方说明安装相应测试浏览器。
+接口文档：http://127.0.0.1:8000/docs 。没有模型密钥配置或外部工具执行。
 
-## 文件入口
+## 源码与部署
 
-- [Demo 使用说明](docs/demo-guide.md)
-- [知识来源与许可](docs/sources.md)
-- [技术实现与适配说明](docs/technical.md)
-- [测试记录](docs/test-report.md)
-- [来源访问校验](docs/source-verification.json)
+`main` 保存源码，`gh-pages` 保存 `web/out` 静态构建，Pages 发布后者根目录。页面不依赖本机开发服务。修改后需重新构建、测试并更新发布分支。
 
-比赛完整材料仍需核对报名表、PPT、签章声明、演示视频与真实试用反馈。本仓库不声明已经报名或提交参赛作品。
+- web/app、components、features：Next.js 入口、应用壳、对话、学习与实训。
+- web/contracts、shared：契约、存储、报告。
+- src/engine.mjs、mastery.mjs：经营与学习算法。
+- data：知识、能力、任务与学习内容。
+- server：独立 FastAPI 服务及原版 Python 算法。
+
+[技术说明](docs/technical.md) · [测试记录](docs/test-report.md) · [部署记录](docs/deployment.md) · [知识来源](docs/sources.md)
+
+程序测试不代替 2—3 名真实师生反馈；视频、PPT、签章材料仍须另行整理。本仓库不声明已经正式提交比赛。

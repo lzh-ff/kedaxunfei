@@ -1,12 +1,14 @@
 {
-  "name": "jingshi-econ-practicum",
-  "version": "1.0.0",
+  "name": "vocational-adaptive-tutor",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/core.test.mjs",
-    "test:e2e": "node tests/e2e.mjs",
-    "start": "node scripts/serve.mjs"
+    "test": "node --test tests/core.test.mjs tests/mastery.test.mjs",
+    "test:e2e": "node tests/adaptive-e2e.mjs",
+    "build": "npm --prefix web run build && node scripts/prepare-site.mjs",
+    "start": "node scripts/preview.mjs",
+    "legacy:preview": "node scripts/serve.mjs"
   },
   "devDependencies": { "playwright": "1.58.2" }
 }

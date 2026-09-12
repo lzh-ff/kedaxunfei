@@ -1,0 +1,6 @@
+import {ArrowUpRight,BookOpen,ArrowRight} from 'lucide-react';
+import {sources} from '../../data/knowledge.mjs';
+export function SourceLinks({ids}:{ids:string[]}){return <div className="source-links">{[...new Set(ids)].filter(id=>Object.hasOwn(sources,id)).map(id=><a key={id} href={(sources as any)[id].url} target="_blank" rel="noopener noreferrer"><BookOpen size={13}/>{(sources as any)[id].title.startsWith('Open')?'OpenStax':id==='standard'?'专业教学标准':'MIT OCW'} · {(sources as any)[id].section.split(' ')[0]}<ArrowUpRight size={12}/></a>)}</div>;}
+export function PageHeading({eyebrow,title,description,children}:{eyebrow:string;title:string;description:string;children?:React.ReactNode}){return <header className="page-heading"><div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>{children}</header>;}
+export function Empty({title,text,action,onAction}:{title:string;text:string;action?:string;onAction?:()=>void}){return <div className="empty-state"><BookOpen size={34} strokeWidth={1.2}/><h2>{title}</h2><p>{text}</p>{action&&<button className="button primary" onClick={onAction}>{action}<ArrowRight size={16}/></button>}</div>;}
+export const num=(n:number,d=0)=>n.toLocaleString('zh-CN',{maximumFractionDigits:d});

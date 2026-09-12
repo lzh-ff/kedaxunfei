@@ -3,3 +3,9 @@ test-results/
 .env
 .env.*
 *.log
+web/.next/
+web/out/
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+__pycache__/
+*.pyc
