@@ -1,0 +1,200 @@
+[
+  {
+    "id": "choice",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+    "section": "2.1 How Individuals Make Choices Based on Their Budget Constraint",
+    "checked_at": "2026-09-12T18:32:37.576922+00:00",
+    "status": 200,
+    "bytes": 363259,
+    "sha256": "466ebc2378fcbaf736aa831ba4521dcdaca7648733ed75efb9b3cdf98b179ee4",
+    "title": "2.1 How Individuals Make Choices Based on Their Budget Constraint - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "ppf",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices",
+    "section": "2.2 The Production Possibilities Frontier and Social Choices",
+    "checked_at": "2026-09-12T18:32:37.576922+00:00",
+    "status": 200,
+    "bytes": 357870,
+    "sha256": "c108f2cbc48fc91e32527eb5b705adc9ce20a24a107b6ae909eda760cb5ff0ed",
+    "title": "2.2 The Production Possibilities Frontier and Social Choices - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "demand",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
+    "section": "3.1 Demand, Supply, and Equilibrium",
+    "checked_at": "2026-09-12T18:32:37.576922+00:00",
+    "status": 200,
+    "bytes": 361929,
+    "sha256": "756d7d94626e8d2ff547bab70ba240c1ffde3084a0b34cf719b8f0e0b10b1c6a",
+    "title": "3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "shifts",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services",
+    "section": "3.2 Shifts in Demand and Supply",
+    "checked_at": "2026-09-12T18:32:37.577923+00:00",
+    "status": 200,
+    "bytes": 388410,
+    "sha256": "56a09d89152025667a2cb189a2eca0b592ef1b3296f86cf436bb272890dc20af",
+    "title": "3.2 Shifts in Demand and Supply for Goods and Services - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "equilibrium",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-3-changes-in-equilibrium-price-and-quantity-the-four-step-process",
+    "section": "3.3 Changes in Equilibrium Price and Quantity",
+    "checked_at": "2026-09-12T18:32:39.296488+00:00",
+    "status": 200,
+    "bytes": 361808,
+    "sha256": "f2d806f4d70e6d44c9de9c37f6f65d02a7a6edfe71172bffc27b300eb3457a2c",
+    "title": "3.3 Changes in Equilibrium Price and Quantity: The Four-Step Process - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "surplus",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-5-demand-supply-and-efficiency",
+    "section": "3.5 Demand, Supply, and Efficiency",
+    "checked_at": "2026-09-12T18:32:39.812975+00:00",
+    "status": 200,
+    "bytes": 348521,
+    "sha256": "b505d1caf123cef9d56a46eed5bd9d7c39b873ec8a3d9a1cceb2d84d44db2ef5",
+    "title": "3.5 Demand, Supply, and Efficiency - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "elasticity",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+    "section": "5.1 Price Elasticity of Demand and Supply",
+    "checked_at": "2026-09-12T18:32:39.904741+00:00",
+    "status": 200,
+    "bytes": 364589,
+    "sha256": "d0eb9f100e1b77afa3955800af8754543fd69256d646c1f5d5ced5fdd938fd1f",
+    "title": "5.1 Price Elasticity of Demand and Price Elasticity of Supply - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "revenue",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing",
+    "section": "5.3 Elasticity and Pricing",
+    "checked_at": "2026-09-12T18:32:40.253910+00:00",
+    "status": 200,
+    "bytes": 371791,
+    "sha256": "719a1c55aa048b6f984e24f0019ac893c17f6ab098e1f1307315da407f7879dd",
+    "title": "5.3 Elasticity and Pricing - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "otherElasticity",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-4-elasticity-in-areas-other-than-price",
+    "section": "5.4 Elasticity in Areas Other Than Price",
+    "checked_at": "2026-09-12T18:32:41.679510+00:00",
+    "status": 200,
+    "bytes": 353120,
+    "sha256": "1c8d50a591d779a4a71a1624742ba80738c66fbabc95208e1eef0adfdf3b7abf",
+    "title": "5.4 Elasticity in Areas Other Than Price - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "consumer",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/6-1-consumption-choices",
+    "section": "6.1 Consumption Choices",
+    "checked_at": "2026-09-12T18:32:41.789598+00:00",
+    "status": 200,
+    "bytes": 373178,
+    "sha256": "596d8f1ffa0e157a18def6ad2bef9956465f0def6c2ad21bd7f07a3f3398ddd2",
+    "title": "6.1 Consumption Choices - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "profit",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit",
+    "section": "7.1 Explicit and Implicit Costs, and Accounting and Economic Profit",
+    "checked_at": "2026-09-12T18:32:42.060449+00:00",
+    "status": 200,
+    "bytes": 339600,
+    "sha256": "3f64fe649e57fe44af887c70339bdccb2d38721d3fea29c7dfb6f6a18cafb195",
+    "title": "7.1 Explicit and Implicit Costs, and Accounting and Economic Profit - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "production",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run",
+    "section": "7.2 Production in the Short Run",
+    "checked_at": "2026-09-12T18:32:42.688275+00:00",
+    "status": 200,
+    "bytes": 355499,
+    "sha256": "0f97958caf85a30092a5e6b15b7e0fc444b616bc74894c56d2223614cb5850ec",
+    "title": "7.2 Production in the Short Run - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "costs",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run",
+    "section": "7.3 Costs in the Short Run",
+    "checked_at": "2026-09-12T18:32:43.451108+00:00",
+    "status": 200,
+    "bytes": 380012,
+    "sha256": "4650b66c2ed313e507927c1c86d64a161c793b159a7f0c953d968a1e30fd7506",
+    "title": "7.3 Costs in the Short Run - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "scale",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/7-4-production-in-the-long-run",
+    "section": "7.4 Production in the Long Run",
+    "checked_at": "2026-09-12T18:32:43.847748+00:00",
+    "status": 200,
+    "bytes": 337221,
+    "sha256": "e6f8b17c4038b2dfa72605ce0c6607cd6f3cab9ed312df56df95ac973b98b6bb",
+    "title": "7.4 Production in the Long Run - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "competition",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions",
+    "section": "8.2 How Perfectly Competitive Firms Make Output Decisions",
+    "checked_at": "2026-09-12T18:32:43.929913+00:00",
+    "status": 200,
+    "bytes": 434125,
+    "sha256": "4f7ff1fa2ea3ecdd2bb67ebad551b518cd3071c4f89e06c3a7842d7a8577d584",
+    "title": "8.2 How Perfectly Competitive Firms Make Output Decisions - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "game",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/10-2-oligopoly",
+    "section": "10.2 Oligopoly",
+    "checked_at": "2026-09-12T18:32:44.378196+00:00",
+    "status": 200,
+    "bytes": 362652,
+    "sha256": "57d3cd3c999c0b8ae47ed874a7eb3cd43cd39c9afad6d88c2133d7c230fc3810",
+    "title": "10.2 Oligopoly - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "externality",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution",
+    "section": "12.1 The Economics of Pollution",
+    "checked_at": "2026-09-12T18:32:45.840103+00:00",
+    "status": 200,
+    "bytes": 349736,
+    "sha256": "fc0b91236cc1c0be3c07d3d0aca0f84ec5e4d4a63a500826d8acbf72af761ac0",
+    "title": "12.1 The Economics of Pollution - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "information",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/16-1-the-problem-of-imperfect-information-and-asymmetric-information",
+    "section": "16.1 The Problem of Imperfect Information and Asymmetric Information",
+    "checked_at": "2026-09-12T18:32:46.371486+00:00",
+    "status": 200,
+    "bytes": 357776,
+    "sha256": "1714e141730db4bdf04666db04524741a12d588ce2149d5935ee090d283b3022",
+    "title": "16.1 The Problem of Imperfect Information and Asymmetric Information - Principles of Economics 3e | OpenStax"
+  },
+  {
+    "id": "standard",
+    "url": "https://www.moe.gov.cn/s78/A07/zcs_ztzl/2017_zt06/17zt06_bznr/bznr_zyjyzyjxbz/gdzyjy_zk/zk_cjsmdl/cjsmdl_dzswl/202502/P020250207542604495307.pdf",
+    "section": "2025年版 · 第5、6、8节",
+    "checked_at": "2026-09-12T18:32:46.398471+00:00",
+    "status": 200,
+    "bytes": 358183,
+    "sha256": "571b7da339f9a600855708391fe2d234c1b2dcb3c77c3aa85115ff8718cfa119"
+  },
+  {
+    "id": "nash",
+    "url": "https://ocw.mit.edu/courses/14-12-economic-applications-of-game-theory-fall-2025/mit14_12f12_chapter6_f12.pdf",
+    "section": "6.1 Definition 6.1, printed p84, PDF p2",
+    "checked_at": "2026-09-12T18:43:24.816005+00:00",
+    "status": "verified_by_web_pdf_extraction",
+    "verification": "19-page PDF read; Definition 6.1 on PDF page 2 supports Nash equilibrium definition.",
+    "local_fetch_status": "Python HTTPS trust chain failed; no local hash claimed."
+  }
+]

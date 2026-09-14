@@ -1,0 +1,15 @@
+1:"$Sreact.fragment"
+2:I[7121,[],""]
+3:I[4581,[],""]
+4:I[196,["224","static/chunks/224-e0fa1a91ae0a9f32.js","974","static/chunks/app/page-25613042bc9850fb.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+8:I[484,[],"ViewportBoundary"]
+a:I[484,[],"MetadataBoundary"]
+c:I[7123,[],"default",1]
+:HL["/kedaxunfei/_next/static/css/685d7cc53aabe0e3.css","style"]
+0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/kedaxunfei/_next/static/css/685d7cc53aabe0e3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"not-found","children":[["$","h1",null,{"children":"这个学习页面没有找到"}],["$","p",null,{"children":"你的本机学习记录仍会保留。"}],["$","a",null,{"href":"/kedaxunfei/","children":"返回学习首页 →"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[["$","$L4",null,{}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],{},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L8",null,{"children":"$L9"}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":"$Lb"}]}]}],null]}],false]],"m":"$undefined","G":["$c",[]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"AbABMFjyhww-cmAeaGvrf"}
+9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:I[6869,[],"IconMark"]
+7:null
+b:[["$","title","0",{"children":"职教自适应学习助手"}],["$","meta","1",{"name":"description","content":"面向电子商务运营岗位的自适应学习工作台。诊断、路径、阅读、练习与岗位实训。"}],["$","link","2",{"rel":"icon","href":"/kedaxunfei/icon.svg"}],["$","$Ld","3",{}]]
