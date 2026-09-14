@@ -1,8 +1,10 @@
 import {reply} from '../../../src/engine.mjs';
 import type {ChatRequest,ChatResponse} from '@/contracts/learning';
 import {lessons,skills} from '../../../data/learning.mjs';
-// The published demo intentionally has no model endpoint or browser API key.
-// A server adapter can implement the same contract after a backend is available.
+import {requestOnlineTutor,safeEndpoint} from '../../../src/chat-client.mjs';
+export const TUTOR_API_URL=safeEndpoint(process.env.NEXT_PUBLIC_TUTOR_API_URL||'');
+export const onlineConfigured=Boolean(TUTOR_API_URL);
+export function askOnlineTutor(request:ChatRequest,signal:AbortSignal):Promise<ChatResponse>{return requestOnlineTutor(TUTOR_API_URL,request,{signal}) as Promise<ChatResponse>;}
 export function askTutor(request:ChatRequest):ChatResponse{
  const result=reply(request.question,{...request.context,pricing:request.pricing});
  const lesson=lessons.find(l=>l.skill===request.skill)!;

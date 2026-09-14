@@ -4,11 +4,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/core.test.mjs tests/mastery.test.mjs",
+    "test": "node --test tests/core.test.mjs tests/mastery.test.mjs tests/chat-proxy.test.mjs tests/chat-client.test.mjs tests/answer-format.test.mjs tests/local-app.test.mjs",
     "test:e2e": "node tests/adaptive-e2e.mjs",
     "build": "npm --prefix web run build && node scripts/prepare-site.mjs",
     "start": "node scripts/preview.mjs",
-    "legacy:preview": "node scripts/serve.mjs"
+    "legacy:preview": "node scripts/serve.mjs",
+    "test:chat-ui": "node tests/chat-ui.mjs",
+    "build:local": "node scripts/build-local.mjs",
+    "build:offline": "node scripts/build-offline.mjs",
+    "start:local": "node scripts/local-app.mjs",
+    "start:proxy": "node scripts/tutor-server.mjs"
   },
-  "devDependencies": { "playwright": "1.58.2" }
+  "devDependencies": {
+    "playwright": "1.58.2"
+  },
+  "dependencies": {
+    "openai": "7.15.0"
+  }
 }

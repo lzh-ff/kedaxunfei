@@ -1,0 +1,12 @@
+import {spawnSync} from 'node:child_process';
+import {cp,mkdir,rm} from 'node:fs/promises';
+import {resolve,sep} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const target=resolve(root,'web/out-local');
+const result=spawnSync(process.execPath,['scripts/build.mjs'],{cwd:resolve(root,'web'),env:{...process.env,NEXT_PUBLIC_TUTOR_API_URL:'/api/chat',NEXT_TELEMETRY_DISABLED:'1'},stdio:'inherit'});
+if(result.status!==0)process.exit(result.status||1);
+const prepare=spawnSync(process.execPath,['scripts/prepare-site.mjs'],{cwd:root,stdio:'inherit'});if(prepare.status!==0)process.exit(prepare.status||1);
+if(!target.startsWith(resolve(root,'web')+sep))throw new Error('invalid output path');
+await rm(target,{recursive:true,force:true});await mkdir(target,{recursive:true});await cp(resolve(root,'web/out'),target,{recursive:true});
+console.log('本机模型页面已保存到 web/out-local；再次运行 npm run build:offline 可生成独立规则版 web/out。');

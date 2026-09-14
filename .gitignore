@@ -9,3 +9,9 @@ web/tsconfig.tsbuildinfo
 web/next-env.d.ts
 __pycache__/
 *.pyc
+
+web/out-local/
+.vercel
+
+# Local Netlify folder
+.netlify

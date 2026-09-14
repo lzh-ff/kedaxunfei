@@ -1,0 +1,5 @@
+import {answerBlocks} from '../../../src/answer-format.mjs';
+function inline(text:string){return text.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).map((part,i)=>part.startsWith('**')&&part.endsWith('**')?<strong key={i}>{part.slice(2,-2)}</strong>:part.startsWith('`')&&part.endsWith('`')?<code key={i}>{part.slice(1,-1)}</code>:part);}
+export default function AnswerText({text}:{text:string}){
+ return <div className="answer-content">{answerBlocks(text).map((block:any,i:number)=>block.type==='table'?<div className="answer-table-wrap" key={i} tabIndex={0} aria-label="回答中的教学数据表"><table><thead><tr>{block.header.map((cell:string,n:number)=><th key={n}>{inline(cell)}</th>)}</tr></thead><tbody>{block.rows.map((row:string[],r:number)=><tr key={r}>{row.map((cell,n)=><td key={n}>{inline(cell)}</td>)}</tr>)}</tbody></table></div>:block.type==='heading'?<h3 key={i}>{inline(block.text)}</h3>:block.type==='list'?<ul key={i}>{block.items.map((item:string,n:number)=><li key={n}>{inline(item)}</li>)}</ul>:<p key={i}>{inline(block.text)}</p>)}</div>;
+}

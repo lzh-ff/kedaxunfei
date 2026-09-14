@@ -1,0 +1,12 @@
+[build]
+  command = "node scripts/check-proxy-deploy.mjs"
+  publish = "public"
+
+[build.environment]
+  # Playwright is a test-only dependency and its install step downloads browsers.
+  NPM_FLAGS = "--omit=dev"
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
