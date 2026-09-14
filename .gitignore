@@ -15,3 +15,4 @@ web/out-local/
 
 # Local Netlify folder
 .netlify
+web/out-offline
